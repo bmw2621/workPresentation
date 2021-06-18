@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Raw HTML Page</title>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Get Users</h1>
+    <div id="allUserData" style="display: none"></div>
+    <button onclick="fetchAllUserData()">Fetch All Users</button>
+    <hr />
+    <h1>Get User</h1>
+    <div id="userData" style="display: none"></div>
+    <input type="number" min="0" id="searchUserId" placeholder="User Id" />
+    <button onclick="fetchUserData()">Fetch User By Id</button>
+    <hr />
+    <h1>Create User</h1>
+    <div id="newUserForm">
+      <input type="text" id="firstNameInput" placeholder="First Name" />
+      <input type="text" id="lastNameInput" placeholder="Last Name" />
+      <input type="number" min="0" id="ageInput" placeholder="Age" />
+      <label for="bamaFan"
+        >Bama Fan?
+        <input type="checkbox" id="bamaFan" name="bamaFan" />
+      </label>
+    </div>
+    <button onclick="createUser()">Create User</button>
+  </body>
+</html>

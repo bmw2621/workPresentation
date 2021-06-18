@@ -1,0 +1,7 @@
+{
+  "workbench.colorCustomizations": {
+    "breadcrumb.background": "#d34bfcaa",
+    "breadcrumb.foreground": "#000"
+  },
+  "python.pythonPath": "python/venv/bin/python"
+}

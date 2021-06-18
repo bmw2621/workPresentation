@@ -1,0 +1,75 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  height: 0;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  width: 80%;
+  border: 3px solid black;
+}
+
+#allUserData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.userid {
+  padding: 10px;
+  color: purple;
+  font-weight: bolder;
+}
+
+#newUserForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#userData {
+  box-shadow: 5px 5px 10px gray;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+}
+
+#toast {
+  box-shadow: 5px 5px 10px gray;
+  border: 1px solid gray;
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
