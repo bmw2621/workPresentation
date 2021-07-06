@@ -6,7 +6,7 @@ const useFetchData = () => {
   const [users, setUsers] = useState();
   const [user, setUser] = useState();
 
-  const getUser = async (id) => {
+  const getUser = (id) => {
     setUser(null);
     fetch(`http://localhost:5000/user/${id}`)
       .then((data) => data.json())
